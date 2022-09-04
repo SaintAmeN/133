@@ -1,7 +1,7 @@
 package pl.sda.j133.zadanie_samochod;
 
 public class Samochod {
-    private int predkosc;                   // 0
+    protected int predkosc;                   // 0
     private boolean swiatlaWlaczone;
 
     // przyspiesz():void
