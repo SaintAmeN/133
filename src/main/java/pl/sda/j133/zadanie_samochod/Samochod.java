@@ -6,7 +6,11 @@ public class Samochod {
 
     // przyspiesz():void
     public void przyspiesz() {
-        if (predkosc >= 120) {
+        przyspieszDoLimitu(120);
+    }
+
+    protected void przyspieszDoLimitu(int limit){
+        if (predkosc >= limit) {
             System.err.println("Nie możesz przyspieszyć!");
         } else {
 //            predkosc = predkosc + 10;
