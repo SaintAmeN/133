@@ -13,5 +13,6 @@ public class MainEquals2 {
         System.out.println(m1.equals(m2));          // teoretycznie powinno wyjść true
                                                     // equals domyślnie porównuje znakami '=='
 
+        // To jest mój komentarz do tego pliku
     }
 }
