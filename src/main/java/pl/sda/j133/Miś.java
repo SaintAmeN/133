@@ -1,5 +1,7 @@
 package pl.sda.j133;
 
+import java.util.Objects;
+
 /**
  * @author Paweł Recław, AmeN
  * @project podstawy
@@ -7,6 +9,13 @@ package pl.sda.j133;
  */
 public class Miś {
     private String imie;
+    private int wiek;
+    private String pesel;
+
+    // public       - w projekcie
+    // protected    - w pakiecie i w klasach dziedziczących
+    // ''           - w pakiecie
+    // private      - w klasie
 
     public Miś() {
     }
@@ -25,4 +34,20 @@ public class Miś {
                 "imie='" + imie + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Miś miś = (Miś) o;
+        return Objects.equals(imie, miś.imie) && Objects.equals(pesel, miś.pesel);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(imie, pesel);
+    }
 }
+
+// 00101010101
+//   101010101
