@@ -21,7 +21,7 @@ public class Samochod {
     }
 
     // wlaczSwiatla():void
-    void wlaczSwiatla() {
+    public void wlaczSwiatla() {
         swiatlaWlaczone = true;
     }
 }
