@@ -35,8 +35,8 @@ public class Main_zbior_1_przyklad_6 {
 
 
         // 1 1 1 1 1
-        int minWartość = 0;
-        int maxWartość = 0;
+        int minWartość = Integer.MAX_VALUE; // dzięki temu jakakolwiek wartość będzie mniejsza od niej i zastąpi tą
+        int maxWartość = Integer.MIN_VALUE; // dzięki temu jakakolwiek wartość będzie większa od niej i zastąpi ją
         do {
             // przyjmujemy liczby
             int liczba = scanner.nextInt();
