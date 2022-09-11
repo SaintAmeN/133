@@ -22,16 +22,19 @@ public class MainMapa {
         Obywatel o1 = mapa.get("123");   // zadziała
         Obywatel o2 = mapa.get(123);     // nie zadziała
 
+        // pętla po wartościach
         for (Obywatel value : mapa.values()) {
 
         }
 
+        // pętla po kluczach
         for (String klucz : mapa.keySet()) {
 
         }
 
+        // pętla po rekordach / parach Klucz+Wartość
         for (Map.Entry<String, Obywatel> entry : mapa.entrySet()) {
-            
+
         }
     }
 }
