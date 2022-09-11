@@ -40,12 +40,17 @@ public class Miś {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Miś miś = (Miś) o;
-        return Objects.equals(imie, miś.imie) && Objects.equals(pesel, miś.pesel);
+        return wiek == miś.wiek && Objects.equals(imie, miś.imie) && Objects.equals(pesel, miś.pesel);
     }
+//    "Janek" -> hash() -> 6546587
+//    "Janek" -> hash() -> 6546587
+//    "janek" -> hash() -> 5416541
 
+
+    // -2mld <-> +2mld
     @Override
     public int hashCode() {
-        return Objects.hash(imie, pesel);
+        return Objects.hash(imie, wiek, pesel);
     }
 }
 
