@@ -24,5 +24,6 @@ public class Main {
         System.out.println(list.get(0));       //... tablica[0]
         list.remove("tekst");                //    tablica[0] = null
 
+        list.get(0);
     }
 }
