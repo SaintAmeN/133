@@ -1,5 +1,10 @@
 package pl.sda.j133.sety;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * @author Paweł Recław, AmeN
  * @project 133
@@ -7,7 +12,17 @@ package pl.sda.j133.sety;
  */
 public class MainSetSlowa {
     public static boolean zawieraSlowaDuplikaty(String tekst) {
-        return false;
+        // Rozbicie tekstu na słowa
+        String[] słowa = tekst.split(" ");
+
+        // Dodanie elementów tablicy do listy
+        List<String> lista = Arrays.asList(słowa);
+
+        // Dodanie elementów listy do zbioru
+        Set<String> zbiór = new HashSet<>(lista);
+
+        // Porównanie wielkości
+        return lista.size() != zbiór.size();
     }
 
     public static void main(String[] args) {
