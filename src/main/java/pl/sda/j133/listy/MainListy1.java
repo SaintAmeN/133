@@ -21,13 +21,20 @@ public class MainListy1 {
 
             list.add(liczbaUzytkownika);
         }
-        
+
 //        Generowanie liczb, opcja 1
 //        double liczba = Math.random()*1000; // 0.0 -> 1000.0
 
 //        Generowanie liczb, opcja 2
-//        Random generator = new Random();
+        Random generator = new Random();
 //        int wygenerowanaLiczba = generator.nextInt(100);
 
+        for (int i = 0; i < 5; i++) {
+            int liczbaWygenerowana = generator.nextInt(100);
+
+            list.add(liczbaWygenerowana);
+        }
+
+        System.out.println(list);
     }
 }
