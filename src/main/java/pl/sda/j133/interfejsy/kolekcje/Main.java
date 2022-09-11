@@ -1,13 +1,7 @@
 package pl.sda.j133.interfejsy.kolekcje;
 
-import pl.sda.j133.Miś;
-import pl.sda.j133.dziedziczenie.Ptak;
-import pl.sda.j133.interfejsy.podstawy.Okno;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * @author Paweł Recław, AmeN
