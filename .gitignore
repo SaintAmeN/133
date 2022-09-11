@@ -2,3 +2,4 @@ target/
 .idea/
 src/main/java/pl/sda/j133/zadania/
 src/main/java/pl/sda/j133/Dominik/
+*.iml
