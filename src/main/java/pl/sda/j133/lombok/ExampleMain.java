@@ -9,7 +9,5 @@ public class ExampleMain {
     public static void main(String[] args) {
 
         Kot k = new Kot();
-
-        k.
     }
 }

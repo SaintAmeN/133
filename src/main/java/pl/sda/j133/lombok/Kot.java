@@ -1,20 +1,18 @@
 package pl.sda.j133.lombok;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * @author Paweł Recław, AmeN
  * @project 133
  * @created 11.09.2022
  */
-@Getter
-@Setter
+
+@Data  // @Getter  // @Setter  // @ToString  // @EqualsAndHashCode  // @RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
 public class Kot {
+//    private final String imie;
     private String imie;
     private String rasa;
     private double masa;
